@@ -13,7 +13,6 @@ function convertCtoF(celsius) {
 btnConvert.addEventListener('click', function() {
    const celsiusTextValue = celsiusInput.value;
    fahrenheitInput.value = convertCtoF(celsiusTextValue);
-   console.log(convertCtoF(celsiusTextValue));
 });
 
 celsiusInput.addEventListener('input', function() {
