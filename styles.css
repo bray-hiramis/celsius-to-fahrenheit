@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   display: flex;
+   height: 100vh;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+   -moz-appearance: textfield;
+   appearance: textfield;
+   font-size: 1.8rem;
+   padding: 10px;
+   text-align: center;
+   border: none;
+   border-bottom: 1px solid #222;
+}
+
+input[type=number]:focus {
+   outline: 1px solid tomato;
+   border: none
+}
+
+.container {
+   border: 1px solid #222;
+   border-radius: 10px;
+   padding: 1.2em;
+}
+
+#title {
+   font-size: 3.5rem;
+   margin-bottom: .5em;
+}
+
+.temp-container {
+   display: flex;
+   justify-content: space-around;
+   font-size: 1.6rem;
+   padding: .6em;
+}
+
+.temp-container label {
+   display: block;
+   text-align: center;
+   margin-bottom: .6em;
+}
+
+p {
+   text-indent: 4em;
+   margin-bottom: 10px;
+}
+
+p .formula {
+   font-weight: bold;
+   color: tomato;
+   font-size: 1.4rem;
+}
+
+#btn-convert {
+   width: 100%;
+   padding: 14px 0;
+   font-size: 1.6rem;
+   border-radius: 10px;
+   border: none;
+   background-color: cornflowerblue;
+   cursor: pointer;
+   transition: .2s;
+}
+
+#btn-convert:hover {
+   background-color: darkcyan;
+}
+
+#btn-convert:active {
+   background-color: cornflowerblue;
+}
